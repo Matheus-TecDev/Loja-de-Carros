@@ -1,0 +1,375 @@
+/*geral */
+:root {
+    --cor-principal: #a056e6; 
+    --cor-secundaria: #000000; 
+    --cor-fundo: #9b9b9b; 
+    --cor-destaque: #cf8aeb; 
+    --fonte-principal: 'Arial', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: var(--fonte-principal);
+    line-height: 1.6;
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+}
+
+.container {
+    
+    margin: 0 auto;
+   
+}
+
+
+/* animaçoes */
+
+
+
+/*header */
+.main-header {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: var(--cor-principal);
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav a:hover, .main-nav a.ativo {
+    background-color: var(--cor-principal);
+    color: white;
+}
+
+/*inicio*/
+
+
+
+
+
+
+
+
+/* carros*/
+
+
+
+
+
+
+/* locais*/
+/* --- ESTILOS PARA PÁGINA LOCAIS --- */
+
+/* Ajusta o flexbox e o estilo de card da coluna do mapa */
+.mapa-coluna {
+    flex: 2; 
+    min-width: 300px;
+    background: var(--branco-fundo);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Regra CRÍTICA para o Iframe: Garante que ele preencha a coluna corretamente */
+.mapa-coluna iframe {
+    width: 100%;
+    height: 400px; /* Mantém a altura para que o mapa seja visível */
+    border-radius: 6px;
+    border: none; /* Remove a borda padrão do iframe */
+}
+
+/* ... (Mantenha o restante do CSS de .locais-lista e .local-item) ... */
+
+
+
+/* avaliaçoes*/
+
+
+
+
+
+/* sobre nós*/
+
+
+
+
+
+/* fale conosco*/
+:root {
+  --roxo: #6a1b9a;
+  --roxo-escuro: #4a0f66;
+  --preto: #0b0b0b;
+  --cinza-claro: #f8f8f8;
+  --borda: #ccc;
+  --raio: 10px;
+  --fonte: "Poppins", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--fonte);
+  color: var(--preto);
+  background-color: var(--cinza-claro);
+  margin: 0;
+  padding: 0;
+}
+
+.fale-conosco {
+  background-color: #fff;
+  border-radius: var(--raio);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 700px;       
+  margin: 60px auto;       
+  padding: 40px 50px;     
+}
+
+
+.titulo-formulario {
+  color: var(--preto);
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  width: 100%;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 14px 16px;
+  font-size: 16px;
+  resize: none;
+  transition: 0.2s;
+}
+
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+  border-color: var(--roxo);
+  box-shadow: 0 0 6px rgba(106, 27, 154, 0.4);
+  outline: none;
+}
+
+
+.botao-enviar {
+  background: linear-gradient(180deg, var(--roxo), var(--roxo-escuro));
+  color: #fff;
+  border: none;
+  border-radius: var(--raio);
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 14px;
+  margin-top: 8px;
+  transition: 0.2s;
+}
+
+.botao-enviar:hover {
+  background: var(--roxo-escuro);
+  transform: scale(1.02);
+}
+
+
+.informacoes-contato {
+  margin-top: 28px;
+  font-size: 16px;
+  color: var(--preto);
+  line-height: 1.6;
+}
+
+.informacoes-contato p {
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  .fale-conosco {
+    width: 95%;
+    padding: 30px 20px;
+  }
+  .titulo-formulario {
+    font-size: 24px;
+  }
+}
+
+
+/* login*/
+.area-login {
+    background-color: var(--cinza-claro); /* Usa o cinza claro do seu :root */
+    border-radius: var(--raio);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 450px;
+    
+    
+    margin: 60px auto; 
+    
+    padding: 40px 50px; 
+    text-align: center; 
+}
+
+
+.area-login input {
+    width: 100%;
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    padding: 14px 16px;
+    font-size: 16px;
+    margin-bottom: 15px; 
+    transition: 0.2s;
+}
+
+.area-login input:focus {
+    border-color: var(--roxo);
+    box-shadow: 0 0 6px rgba(106, 27, 154, 0.4);
+    outline: none;
+}
+
+
+.titulo-login {
+    color: var(--preto);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+
+.botao-enviar {
+    background: linear-gradient(180deg, var(--roxo), var(--roxo-escuro));
+    color: #fff;
+    border: none;
+    border-radius: var(--raio);
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 14px;
+    margin-top: 8px;
+    width: 100%;
+    transition: 0.2s;
+}
+
+
+.botao-secundario {
+    background: none; 
+    color: var(--roxo);
+    border: 2px solid var(--roxo); 
+    border-radius: var(--raio);
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 12px;
+    margin-top: 15px;
+    width: 100%;
+    transition: 0.2s;
+}
+.botao-secundario:hover {
+    background-color: var(--roxo);
+    color: white;
+}
+
+
+.bot{
+    margin-top: 25px; margin-bottom: 5px;
+}
+
+/*footer */
+.main-footer {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.footer-section h4 {
+    color: var(--cor-principal);
+    margin-bottom: 15px;
+}
+
+.footer-section a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+
+
+/* botao wpp*/
+.whatsapp-float {
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px; 
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25d366; 
+    color: white; 
+    text-align: center;
+    line-height: 60px; 
+    font-size: 30px; 
+    text-decoration: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); 
+    z-index: 9999; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1); 
+}
+
+
+.whatsapp-float span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        line-height: 50px;
+        font-size: 25px;
+    }
+}
