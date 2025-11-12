@@ -1,85 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login e Cadastro | Emy&Madu</title>
-    <link rel="stylesheet" href="madusite.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login e Cadastro | Emy&Madu</title>
+  <link rel="stylesheet" href="madusite.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container nav-content">
-            <div class="logo"><a href="madusite.html">Emy&Madu</a></div>
-            <nav class="main-nav">
-                <a href="madusite.html">Início</a>
-                <a href="carros.html">Carros</a>
-                <a href="locais.html">Locais</a>
-                <a href="avaliacoes.html">Avaliações</a>
-                <a href="sobrenos.html">Sobre Nós</a>
-                <a href="faleconosco.html">Fale conosco</a>
-                <a href="cadastro.html" >Login/Cadastro</a>
-            </nav>
-        </div>
-    </header>
+  <header class="main-header">
+    <div class="container nav-content">
+      <div class="logo">
+        <a href="index.html">✨ Emy&Madu ✨</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="carros.html">Carros</a>
+        <a href="locais.html">Locais</a>
+        <a href="avaliacoes.html">Avaliações</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+        <a href="faleconosco.html">Contato</a>
+        <a href="cadastro.html" class="active cta">Login / Cadastro</a>
+      </nav>
+    </div>
+  </header>
 
-     <section class="area-login">
-    <h2 class="titulo-login">Login</h2>
+  <main class="login-container">
+    <div class="form-container">
+      <div class="form-box" id="login-box">
+        <h2>Bem-vinda de volta 💕</h2>
+        <form class="formulario" action="#" method="post">
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+          <input type="password" name="senha" placeholder="Sua senha" required>
+          <button type="submit" class="botao-enviar">Entrar</button>
+        </form>
+        <p class="texto-alternativo">
+          Ainda não tem conta?  
+          <button class="link-toggle" onclick="mostrarCadastro()">Cadastre-se</button>
+        </p>
+      </div>
 
-    <form class="formulario-login" action="#" method="post">
-      <input type="email" name="email" placeholder="Seu Email" required>
-      <input type="password" name="senha" placeholder="Sua Senha" required>
-      <button type="submit" class="botao-enviar">Entrar</button>
-    </form>
+      <div class="form-box" id="cadastro-box" style="display: none;">
+        <h2>Crie sua conta ✨</h2>
+        <form class="formulario" action="#" method="post">
+          <input type="text" name="nome" placeholder="Nome completo" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <input type="password" name="senha" placeholder="Crie uma senha" required>
+          <input type="password" name="confirmar" placeholder="Confirme a senha" required>
+          <button type="submit" class="botao-enviar">Cadastrar</button>
+        </form>
+        <p class="texto-alternativo">
+          Já tem conta?
+          <button class="link-toggle" onclick="mostrarLogin()">Fazer Login</button>
+        </p>
+      </div>
+    </div>
+  </main>
 
-    <a href="criarconta.html" class="bot">Não tem conta ainda?</a>
-   
-  </section>
-
-  <section class="area-cadastro" style="display: none;">
-    <h2 class="titulo-login">Cadastro</h2>
-
-    <form class="formulario-login" action="#" method="post">
-      <input type="text" name="nome" placeholder="Seu Nome" required>
-      <input type="email" name="email" placeholder="Seu Email" required>
-      <input type="password" name="senha" placeholder="Crie uma Senha" required>
-      <input type="password" name="confirmar" placeholder="Confirme a Senha" required>
-      <button type="submit" class="botao-enviar"> <a href="criarconta.html"></a>Cadastrar</button>
-    </form>
-
-    <p class="texto-alternativo">Já tem uma conta?</p>
-    <button class="botao-secundario" onclick="mostrarLogin()">Fazer Login</button>
-  </section>
-
-    <a 
-    href="https://wa.me/5585989351891?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20aluguel%20de%20carros." 
+  <a 
+    href="https://wa.me/5585989351891?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20login%20ou%20cadastro%20na%20Emy%26Madu!%20💬✨" 
     class="whatsapp-float" 
     target="_blank"
     title="Fale Conosco pelo WhatsApp"
->
-    <span>💬</span>
-</a>
+  >
+    💬
+  </a>
 
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>Empresa</h4>
+        <a href="sobrenos.html">Sobre Nós</a>
+        <a href="faleconosco.html">Contato</a>
+      </div>
+      <div class="footer-section">
+        <h4>Serviços</h4>
+        <a href="carros.html">Ver Frota</a>
+        <a href="locais.html">Nossos Locais</a>
+      </div>
+      <div class="footer-section">
+        <h4>Siga-nos</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 Emy&Madu Locadora — Criado com 💖</p>
+  </footer>
 
-    <footer class="main-footer">
-        <div class="container footer-content">
-            <div class="footer-section">
-                <h4>Empresa</h4>
-                <a href="sobrenos.html">Sobre Nós</a>
-                <a href="faleconosco.html">Fale Conosco</a>
-            </div>
-            <div class="footer-section">
-                <h4>Serviços</h4>
-                <a href="carros.html">Ver Frota</a>
-                <a href="locais.html">Nossos Locais</a>
-            </div>
-            <div class="footer-section">
-                <h4>Siga-nos</h4>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-            </div>
-        </div>
-        <p style="text-align: center; margin-top: 20px;">&copy; 2025 Emy&Madu Locadora.</p>
-    </footer>
+  <script>
+    function mostrarCadastro() {
+      document.getElementById('login-box').style.display = 'none';
+      document.getElementById('cadastro-box').style.display = 'block';
+    }
 
-    </body>
+    function mostrarLogin() {
+      document.getElementById('cadastro-box').style.display = 'none';
+      document.getElementById('login-box').style.display = 'block';
+    }
+  </script>
+</body>
 </html>

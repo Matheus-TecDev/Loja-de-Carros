@@ -1,76 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login e Cadastro | Emy&Madu</title>
-    <link rel="stylesheet" href="madusite.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login e Cadastro | Emy&Madu</title>
+  <link rel="stylesheet" href="madusite.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container nav-content">
-            <div class="logo"><a href="madusite.html">Emy&Madu</a></div>
-            <nav class="main-nav">
-                <a href="madusite.html">Início</a>
-                <a href="carros.html">Carros</a>
-                <a href="locais.html">Locais</a>
-                <a href="avaliacoes.html">Avaliações</a>
-                <a href="sobrenos.html">Sobre Nós</a>
-                <a href="faleconosco.html">Fale conosco</a>
-                <a href="cadastro.html" >Login/Cadastro</a>
-        
-            </nav>
-        </div>
-    </header>
-
-    <section class="fale-conosco">
-    <h2 class="titulo-formulario">Fale Conosco</h2>
-
-    <form class="formulario-contato" action="#" method="post">
-      <input type="text" name="nome" placeholder="Seu Nome" required>
-      <input type="email" name="email" placeholder="Seu Email" required>
-      <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
-      <button type="submit" class="botao-enviar">Enviar</button>
-    </form>
-
-    <div class="informacoes-contato">
-      <p>📍 Av. Washington Soares, 85 - Edson Queiroz, Fortaleza - CE, 60811-341</p>
-      <p>📞 (85) 92345-9034</p>
-      <p>💬 WhatsApp: (85) 98935-1891</p>
-      <p>✉️ emy&madu2025@gmail.com</p>
+  <header class="main-header">
+    <div class="container nav-content">
+      <div class="logo">
+        <a href="index.html">✨ Emy&Madu ✨</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="carros.html">Carros</a>
+        <a href="locais.html">Locais</a>
+        <a href="avaliacoes.html">Avaliações</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+        <a href="faleconosco.html">Contato</a>
+        <a href="cadastro.html" class="active cta">Login / Cadastro</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-    <a 
-    href="https://wa.me/5585989351891?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20aluguel%20de%20carros." 
+  <main class="login-page container">
+    <section class="login-cadastro">
+      <h1 class="page-title">Entre ou Crie Sua Conta 💕</h1>
+      <p class="page-subtitle">Acesse sua conta para gerenciar reservas, acompanhar pedidos e aproveitar vantagens exclusivas.</p>
+
+      <div class="form-wrapper">
+        <div class="form-box">
+          <h2>Já tenho uma conta</h2>
+          <form action="#" method="post" class="formulario-login">
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <input type="password" name="senha" placeholder="Sua senha" required>
+            <button type="submit" class="botao-enviar">Entrar</button>
+          </form>
+          <a href="#" class="link-recuperar">Esqueci minha senha</a>
+        </div>
+
+        <div class="form-box">
+          <h2>Quero me cadastrar</h2>
+          <form action="#" method="post" class="formulario-cadastro">
+            <input type="text" name="nome" placeholder="Nome completo" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="password" name="senha" placeholder="Crie uma senha" required>
+            <button type="submit" class="botao-enviar">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a 
+    href="https://wa.me/5585989351891?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20login%20ou%20cadastro%20na%20Emy%26Madu!%20💬✨" 
     class="whatsapp-float" 
     target="_blank"
     title="Fale Conosco pelo WhatsApp"
->
-    <span>💬</span>
-</a>
+  >
+    💬
+  </a>
 
-
-    <footer class="main-footer">
-        <div class="container footer-content">
-            <div class="footer-section">
-                <h4>Empresa</h4>
-                <a href="sobrenos.html">Sobre Nós</a>
-                <a href="faleconosco.html">Fale Conosco</a>
-            </div>
-            <div class="footer-section">
-                <h4>Serviços</h4>
-                <a href="carros.html">Ver Frota</a>
-                <a href="locais.html">Nossos Locais</a>
-            </div>
-            <div class="footer-section">
-                <h4>Siga-nos</h4>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-            </div>
-        </div>
-        <p style="text-align: center; margin-top: 20px;">&copy; 2025 Emy&Madu Locadora.</p>
-    </footer>
-
-    </body>
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>Empresa</h4>
+        <a href="sobrenos.html">Sobre Nós</a>
+        <a href="faleconosco.html">Contato</a>
+      </div>
+      <div class="footer-section">
+        <h4>Serviços</h4>
+        <a href="carros.html">Ver Frota</a>
+        <a href="locais.html">Nossos Locais</a>
+      </div>
+      <div class="footer-section">
+        <h4>Siga-nos</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 Emy&Madu Locadora — Criado com 💖</p>
+  </footer>
+</body>
 </html>

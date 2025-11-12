@@ -1,93 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locais | Emy&Madu</title>
-    <link rel="stylesheet" href="madusite.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locais | Emy&Madu</title>
+  <link rel="stylesheet" href="madusite.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container nav-content">
-            <div class="logo"><a href="madusite.html">Emy&Madu</a></div>
-            <nav class="main-nav">
-                <a href="madusite.html">Início</a>
-                <a href="carros.html">Carros</a>
-                <a href="locais.html">Locais</a>
-                <a href="avaliacoes.html">Avaliações</a>
-                <a href="sobrenos.html">Sobre Nós</a>
-                <a href="faleconosco.html">Fale conosco</a>
-                <a href="cadastro.html">Login/Cadastro</a>
-            </nav>
-        </div>
-    </header>
-   
-   <main class="container">
-    <h1 style="text-align: center; margin-bottom: 30px;">Locais para Retirada e Devolução</h1>
-    
-    <section class="contato">
-        
-        <div class="mapa-coluna">
-            <h2 style="color: var(--roxo-principal); margin-bottom: 15px;">Localização Principal</h2>
-            
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.332077983804!2d-38.48911522588361!3d-3.755497296277054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c745b53e77f0f9%3A0xc3f7a6331a90c05!2sAv.%20Washington%20Soares%2C%2085%20-%20Edson%20Queiroz%2C%20Fortaleza%20-%20CE%2C%2060811-341!5e0!3m2!1spt-BR!2sbr!4v1701284850123!5m2!1spt-BR!2sbr" 
-                width="100%" 
-                height="400" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
+  <header class="main-header">
+    <div class="container nav-content">
+      <div class="logo">
+        <a href="index.html">✨ Emy&Madu ✨</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="carros.html">Carros</a>
+        <a href="locais.html" class="active">Locais</a>
+        <a href="avaliacoes.html">Avaliações</a>
+        <a href="sobrenos.html">Sobre Nós</a>
+        <a href="faleconosco.html">Contato</a>
+        <a href="cadastro.html" class="cta">Login / Cadastro</a>
+      </nav>
+    </div>
+  </header>
 
-        <div class="locais-lista">
-            <h2>Lojas Consignadas</h2>
-            
-            <article class="local-item">
-                <h3>Loja Principal - Fortaleza (CE)</h3>
-                <p>Av. Washington Soares 85, Edson Queiroz</p>
-                <p>Horário: 08:00 às 22:00 (Todos os dias)</p>
-                <a href="#" style="color: var(--roxo-secundario); text-decoration: none;">Ver detalhes</a>
-            </article>
-            
-            </div>
-        
+  <main class="container locais-page">
+    <h1 class="page-title">Nossos Locais de Retirada e Devolução 💜</h1>
+
+    <section class="locais-section">
+      <div class="mapa-coluna">
+        <h2 class="mapa-titulo">Localização Principal</h2>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.332077983804!2d-38.48911522588361!3d-3.755497296277054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c745b53e77f0f9%3A0xc3f7a6331a90c05!2sAv.%20Washington%20Soares%2C%2085%20-%20Edson%20Queiroz%2C%20Fortaleza%20-%20CE%2C%2060811-341!5e0!3m2!1spt-BR!2sbr!4v1701284850123!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="400" 
+          style="border:0; border-radius: 12px;" 
+          allowfullscreen 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="locais-lista">
+        <h2>Lojas Parceiras</h2>
+
+        <article class="local-item">
+          <h3>Loja Principal — Fortaleza (CE)</h3>
+          <p>Av. Washington Soares, 85 — Edson Queiroz</p>
+          <p><strong>Horário:</strong> 08h às 22h (Todos os dias)</p>
+          <a href="#" class="link-detalhes">Ver detalhes</a>
+        </article>
+
+        <article class="local-item">
+          <h3>Filial — Eusébio (CE)</h3>
+          <p>Av. Eusébio de Queiroz, 450 — Centro</p>
+          <p><strong>Horário:</strong> 09h às 20h (Seg. a Sáb.)</p>
+          <a href="#" class="link-detalhes">Ver detalhes</a>
+        </article>
+      </div>
     </section>
-</main>
+  </main>
 
-    
-   <a 
-    href="https://wa.me/5585989351891?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20aluguel%20de%20carros." 
+  <a 
+    href="https://wa.me/5585989351891?text=Ol%C3%A1%2C%20quero%20saber%20sobre%20os%20locais%20de%20retirada%20da%20Emy%26Madu!%20📍💜" 
     class="whatsapp-float" 
     target="_blank"
     title="Fale Conosco pelo WhatsApp"
->
-    <span>💬</span>
-</a>
+  >
+    💬
+  </a>
 
-
-   
-    <footer class="main-footer">
-        <div class="container footer-content">
-            <div class="footer-section">
-                <h4>Empresa</h4>
-                <a href="sobrenos.html">Sobre Nós</a>
-                <a href="faleconosco.html">Fale Conosco</a>
-            </div>
-            <div class="footer-section">
-                <h4>Serviços</h4>
-                <a href="carros.html">Ver Frota</a>
-                <a href="locais.html">Nossos Locais</a>
-            </div>
-            <div class="footer-section">
-                <h4>Siga-nos</h4>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-            </div>
-        </div>
-        <p style="text-align: center; margin-top: 20px;">&copy; 2025 Emy&Madu Locadora.</p>
-    </footer>
-   
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h4>Empresa</h4>
+        <a href="sobrenos.html">Sobre Nós</a>
+        <a href="faleconosco.html">Contato</a>
+      </div>
+      <div class="footer-section">
+        <h4>Serviços</h4>
+        <a href="carros.html">Ver Frota</a>
+        <a href="locais.html">Nossos Locais</a>
+      </div>
+      <div class="footer-section">
+        <h4>Siga-nos</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 Emy&Madu Locadora — Criado com 💖</p>
+  </footer>
 </body>
 </html>
